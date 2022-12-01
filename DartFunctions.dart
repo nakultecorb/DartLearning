@@ -15,12 +15,17 @@ int add(int a, int b) {
 }
 
 //example of Optional Positional Parameter
-void positionalPar
+void positionalParamsFunction(int a, {int b = 10, int c = 20}) {
+  print("a is $a");
+  print("b is $b");
+  print("c is $c");
+}
 
 void main() {
   // Calling the function
-  var output = add(10, 20);
+  // var output = add(10, 20);
 
   // Printing output
-  print("");
+  // print("");
+  positionalParamsFunction(5);
 }
